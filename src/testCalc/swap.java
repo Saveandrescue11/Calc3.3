@@ -19,7 +19,13 @@ public class swap {
             }
         }
         int result = calculator.Calculations(num1,oper,num2);
+        String resultat;
 
-        System.out.println(result);
+        if (selections == 2) {
+            resultat =  ArabicToRoman.RomanNumerals(result);
+            System.out.println(resultat);
+        }
+        else {System.out.println(result);
+        }
     }
 }
